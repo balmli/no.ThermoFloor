@@ -1,0 +1,262 @@
+[
+  {
+    "id": "operation_mode",
+    "zwave": {
+      "index": 1,
+      "size": 1
+    },
+    "type": "dropdown",
+    "label": {
+      "en": "Thermostat mode",
+      "nl": "Thermostaat modus"
+    },
+    "value": "1",
+    "hint": {
+      "en": "Thermostat mode. (default: Energy saving)",
+      "nl": "Thermostaat modus. (standaard: Energiebesparing)"
+    },
+    "values": [
+      {
+        "id": "1",
+        "label": {
+          "en": "Comfort",
+          "nl": "Comfort"
+        }
+      },
+      {
+        "id": "11",
+        "label": {
+          "en": "Energy Saving",
+          "nl": "Energiebesparing"
+        }
+      },
+      {
+        "id": "0",
+        "label": {
+          "en": "Off",
+          "nl": "Uitgeschakeld"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "Cool",
+          "nl": "Koelen"
+        }
+      }
+    ]
+  },
+  {
+    "id": "temp_hysteresis",
+    "zwave": {
+      "index": 4,
+      "size": 1
+    },
+    "type": "number",
+    "attr": {
+      "min": 0,
+      "max": 30
+    },
+    "value": 5,
+    "label": {
+      "en": "Temperature control hysteresis"
+    },
+    "hint": {
+      "en": "Temperature control hysteresis. \nRange: 0 - 30 (0.0C - 3.0C) \nDefault: 5"
+    }
+  },
+  {
+    "id": "FLo",
+    "zwave": {
+      "index": 5,
+      "size": 2
+    },
+    "type": "number",
+    "attr": {
+      "min": 50,
+      "max": 400
+    },
+    "value": 50,
+    "label": {
+      "en": "Floor minimum temperature"
+    },
+    "hint": {
+      "en": "Floor minimum temperature. \nRange: 50 - 400 (5.0C - 40.0C) \nDefault: 50"
+    }
+  },
+  {
+    "id": "FHi",
+    "zwave": {
+      "index": 6,
+      "size": 2
+    },
+    "type": "number",
+    "attr": {
+      "min": 50,
+      "max": 400
+    },
+    "value": 400,
+    "label": {
+      "en": "Floor maximum temperature"
+    },
+    "hint": {
+      "en": "Floor maximum temperature. \nRange: 50 - 400 (5.0C - 40.0C) \nDefault: 400"
+    }
+  },
+  {
+    "id": "ALo",
+    "zwave": {
+      "index": 7,
+      "size": 2
+    },
+    "type": "number",
+    "attr": {
+      "min": 50,
+      "max": 400
+    },
+    "value": 50,
+    "label": {
+      "en": "Air minimum temperature"
+    },
+    "hint": {
+      "en": "Air minimum temperature. \nRange: 50 - 400 (5.0C - 40.0C) \nDefault: 50"
+    }
+  },
+  {
+    "id": "AHi",
+    "zwave": {
+      "index": 8,
+      "size": 2
+    },
+    "type": "number",
+    "attr": {
+      "min": 50,
+      "max": 400
+    },
+    "value": 400,
+    "label": {
+      "en": "Air maximum temperature"
+    },
+    "hint": {
+      "en": "Air minimum temperature. \nRange: 50 - 400 (5.0C - 40.0C) \nDefault: 400"
+    }
+  },
+  {
+    "id": "PLo",
+    "zwave": {
+      "index": 9,
+      "size": 1
+    },
+    "type": "number",
+    "attr": {
+      "min": 0,
+      "max": 9
+    },
+    "value": 0,
+    "label": {
+      "en": "FP mode P setting"
+    },
+    "hint": {
+      "en": "FP mode P setting. \nRange: 0 - 9 \nDefault: 0"
+    }
+  },
+  {
+    "id": "CO_setpoint",
+    "zwave": {
+      "index": 10,
+      "size": 2
+    },
+    "type": "number",
+    "attr": {
+      "min": 50,
+      "max": 400
+    },
+    "value": 210,
+    "label": {
+      "en": "Comfort mode temperature",
+      "nl": "Comfort modus temperatuur"
+    },
+    "hint": {
+      "en": "Temperature setpoint used when in Comfort (CO) mode. \nRange: 50 - 400 (5.0C - 40.0C) \nDefault: 210",
+      "nl": "Temperatuur setpoint gebruikt in Comfort (CO) mode. \nBereik: 50 - 400 (5.0C - 40.0C)\nStandaard: 210"
+    }
+  },
+  {
+    "id": "ECO_setpoint",
+    "zwave": {
+      "index": 11,
+      "size": 2
+    },
+    "type": "number",
+    "attr": {
+      "min": 50,
+      "max": 400
+    },
+    "value": 180,
+    "label": {
+      "en": "Energy saving mode temperature",
+      "nl": "Energiebesparings modus temperatuur"
+    },
+    "hint": {
+      "en": "Temperature setpoint used when in Energy saving (ECO) mode. \nRange: 50 - 400 (5.0C - 40.0C) \nDefault: 180",
+      "nl": "Temperatuur setpoint gebruikt in Energiebesparings (ECO) mode. \nBereik: 50 - 400 (5.0C - 40.0C)\nStandaard: 180"
+    }
+  },
+  {
+    "id": "P_setting",
+    "zwave": {
+      "index": 12,
+      "size": 1
+    },
+    "type": "number",
+    "attr": {
+      "min": 0,
+      "max": 10
+    },
+    "value": 2,
+    "label": {
+      "en": "P setting"
+    },
+    "hint": {
+      "en": "P setting. \nRange: 0 - 10 \nDefault: 0"
+    }
+  },
+  {
+    "id": "COOL_setpoint",
+    "zwave": {
+      "index": 13,
+      "size": 2
+    },
+    "type": "number",
+    "attr": {
+      "min": 50,
+      "max": 400
+    },
+    "value": 210,
+    "label": {
+      "en": "Cooling mode temperature",
+      "nl": "Koelen mode temperatuur"
+    },
+    "hint": {
+      "en": "Temperature setpoint used when in Cooling (COOL) mode (only if enabled). \nRange: 50 - 400 (5.0C - 40.0C) \nDefault: 210",
+      "nl": "Temperatuur setpoint gebruikt in Koelen (COOL) modus (indien beschikbaar). \nBereik: 50 - 400 (5.0C - 40.0C)\nStandaard: 210"
+    }
+  },
+  {
+    "id": "poll_interval_TEMPERATURE",
+    "type": "number",
+    "attr": {
+      "min": 60,
+      "max": 3600
+    },
+    "value": 300,
+    "label": {
+      "en": "Poll interval temperature",
+      "nl": "Poll interval temperatuur"
+    },
+    "hint": {
+      "en": "The amount of seconds between asking the device for a status (meausured temperature) update \nDefault: 300 [s].",
+      "nl": "Aantal seconden tussen het opvragen van een status (gemeten temperatuur) update aan het apparaat \nStandaard: 300 [s]."
+    }
+  }
+]
